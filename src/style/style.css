@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 880px) {
+  * {
+    font-size: 0.8rem;
+  }
+}
+
+body {
+  background-color: #fff5f5 !important;
+  color: #1b2f53;
+}
+
+.section-container {
+  height: "100vh";
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10rem 0 2rem 14rem;
+  letter-spacing: 2px;
+  align-items: center;
+}
+
+.container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 1s ease;
+}
+
+.show .container {
+  opacity: 1;
+  transform: translateY(0);
+}

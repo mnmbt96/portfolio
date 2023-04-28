@@ -1,0 +1,72 @@
+/* about.jsx */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  color: #1b2f53;
+}
+
+.image-container {
+  position: relative;
+  margin: 5rem 14rem 0 2rem;
+}
+
+.fortfolio-image {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  border-radius: 5px;
+}
+
+.square {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 320px;
+  height: 320px;
+  background-color: #1b2f53;
+  transition: transform 0.5s ease;
+  border-radius: 5px;
+}
+
+.image-container:hover .square {
+  transform: translate(10px, 10px);
+}
+
+.skills-container {
+  margin: 1rem 0 1rem 14rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-point {
+  color: #fd5d5d;
+}
+
+.skill-name {
+  margin-right: 2rem;
+}
+
+/* aboutContents.jsx */
+.about-contents {
+  margin: 1rem 5rem 2rem 14rem;
+  letter-spacing: 1px;
+}
+
+.name-strong {
+  font-size: 1.2rem;
+}
+
+.udemy-link {
+  text-decoration: none;
+  color: #fd5d5d;
+  font-weight: bold;
+  position: relative;
+}
+
+.udemy-link:hover {
+  border-bottom: 1px solid #fd5d5d;
+  color: #fd5d5d;
+}
