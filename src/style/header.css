@@ -112,3 +112,15 @@
     transform: translateY(0%);
   }
 }
+
+/* sidebar */
+.offcanvas {
+  color: #1b2f53 !important;
+  background-color: #fff5f5 !important;
+}
+
+.offcanvas-title {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  margin-left: 1.5rem;
+}

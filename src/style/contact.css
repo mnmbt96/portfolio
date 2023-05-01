@@ -1,3 +1,9 @@
+#contact {
+  color: #1b2f53;
+  max-width: 70vw !important;
+  margin-top: 10rem;
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -6,7 +12,7 @@
 }
 
 .input-forms {
-  width: 50%;
+  width: 90%;
 }
 
 .btn-submit {
@@ -25,4 +31,10 @@
 .form-control:focus {
   box-shadow: none !important;
   border-color: #1b2f53 !important;
+}
+
+@media screen and (max-width: 767px) {
+  #contact {
+    max-width: 80vw !important;
+  }
 }

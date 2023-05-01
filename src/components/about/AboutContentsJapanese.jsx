@@ -12,14 +12,13 @@ const AboutContentsJapanese = () => {
         と申します。バンクーバのカレッジでWebアプリケーション開発の勉強をしています。
       </p>
       <p>
-        カレッジの勉強以外でも、
         <a
           className="udemy-link"
           href="https://www.udemy.com/course/the-complete-javascript-course/"
         >
           JavaScriptのマスターコース
         </a>
-        を受講しました。現在、Reactなどのフレームワークを使用したフロントエンド開発に注力しています。
+        を受講し、Reactなどのフレームワークを使用したフロントエンド開発に力を入れています。
       </p>
       <p>
         常に新しい技術やツールを学び、最新の開発手法を取り入れたいという思いで一生懸命勉強しています。柔軟で協力的なチームプレイヤーとして、プロジェクトの成功に貢献していきたいです。

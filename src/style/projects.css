@@ -1,0 +1,11 @@
+#projects {
+  color: #1b2f53;
+  max-width: 70vw !important;
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 767px) {
+  #projects {
+    max-width: 80vw !important;
+  }
+}

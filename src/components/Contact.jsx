@@ -12,32 +12,40 @@ const Contact = ({ language }) => {
 
   return (
     <Section>
-      <section id="contact" className="contact-container container">
-        <h2 className="title" style={{ margin: "10rem 0 2rem 0rem" }}>
+      <section id="contact" className="container">
+        <h2 className="section-title">
           {language === "en" ? "Contact" : "お問い合せ"}
         </h2>
-        <p>{language === "en" ? content.en : content.ja}</p>
-        <Form className="input-forms">
-          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>{language === "en" ? "Name" : "氏名"}</Form.Label>
-            <Form.Control type="textarea" required />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>
-              {language === "en" ? "Email" : "メールアドレス"}
-            </Form.Label>
-            <Form.Control type="email" required />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>
-              {language === "en" ? "Message" : "メッセージ"}
-            </Form.Label>
-            <Form.Control as="textarea" rows={3} />
-          </Form.Group>
-        </Form>
-        <button className="btn-submit">
-          {language === "en" ? "Submit" : "送信"}
-        </button>
+        <div className="contact-container">
+          <p>{language === "en" ? content.en : content.ja}</p>
+          <Form className="input-forms">
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>{language === "en" ? "Name" : "氏名"}</Form.Label>
+              <Form.Control type="textarea" required />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>
+                {language === "en" ? "Email" : "メールアドレス"}
+              </Form.Label>
+              <Form.Control type="email" required />
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>
+                {language === "en" ? "Message" : "メッセージ"}
+              </Form.Label>
+              <Form.Control as="textarea" rows={3} />
+            </Form.Group>
+          </Form>
+          <button className="btn-submit">
+            {language === "en" ? "Submit" : "送信"}
+          </button>
+        </div>
       </section>
     </Section>
   );

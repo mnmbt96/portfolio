@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 3rem 14rem;
   color: #1b2f53;
+  margin-bottom: 3rem;
 }
 
 .project-title {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   letter-spacing: 2px;
   margin-bottom: 1rem;
 }
@@ -57,4 +57,23 @@
 
 .btn-open-modal:hover {
   background-color: #f6808495;
+}
+
+@media screen and (max-width: 990px) {
+  .projectItem-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-detail-links {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .project-img {
+    width: 270px;
+    height: 170px;
+  }
 }

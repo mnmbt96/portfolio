@@ -6,6 +6,7 @@
   letter-spacing: 2px;
   color: #1b2f53;
   background-image: url("/src/assets/images/hero-background.png");
+  background-size: cover;
 }
 
 .contact-icons {
@@ -15,7 +16,6 @@
   bottom: 1rem;
   left: 1rem;
   margin-bottom: 2rem;
-  width: 10vw;
   z-index: 9999;
 }
 
@@ -125,5 +125,36 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .hero-greetings {
+    font-size: 1rem;
+  }
+  .hero-name {
+    font-size: 3rem;
+  }
+  .hero-job {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .hero-greetings {
+    font-size: 1rem;
+  }
+  .hero-name {
+    font-size: 2.5rem;
+  }
+  .hero-job {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-icons,
+  .hero-mail {
+    display: none;
   }
 }
