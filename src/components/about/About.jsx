@@ -38,7 +38,7 @@ const About = ({ language }) => {
               <AboutContentsJapanese />
             )}
             <div className="skills-container">
-              <h5>Skills</h5>
+              <h5>{language === "en" ? "Skills" : "スキル"}</h5>
               <div className="skills">
                 {skills.map((skill, index) => {
                   return (

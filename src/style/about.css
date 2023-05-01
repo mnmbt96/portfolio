@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5rem;
   max-width: 70vw !important;
+  margin-top: 5rem;
 }
 
 .about-container {
@@ -103,7 +103,8 @@
 }
 
 @media screen and (max-width: 767px) {
-  #about {
-    max-width: 80vw !important;
+  .about-contents-container,
+  .skill-name {
+    margin: 0;
   }
 }

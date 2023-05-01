@@ -39,3 +39,22 @@ body {
     font-size: 1.7rem;
   }
 }
+
+@media screen and (max-width: 767px) {
+  #about,
+  #projects,
+  #contact {
+    max-width: 90vw !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #projects,
+  #contact {
+    margin-top: 7rem !important;
+  }
+
+  .section-title {
+    margin-bottom: 1.5rem;
+  }
+}
