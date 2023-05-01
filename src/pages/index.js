@@ -17,6 +17,7 @@ const IndexPage = () => {
       <About language={language} />
       <Projects language={language} />
       <Contact language={language} />
+      <p className="copyright">&copy; 2023 Manami Batai</p>
     </>
   );
 };

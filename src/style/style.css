@@ -34,6 +34,12 @@ body {
   transform: translateY(0);
 }
 
+.copyright {
+  color: #1b2f5389;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 805px) {
   .section-title {
     font-size: 1.7rem;
