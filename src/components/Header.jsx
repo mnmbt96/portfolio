@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import mbLogo from "../assets/images/mb-logo.png";
 import "../style/header.css";
 import "../style/style.css";
 
@@ -37,8 +38,8 @@ const Header = ({ language, setLanguage }) => {
         style={{ height: "5rem" }}
       >
         <Container fluid>
-          <Navbar.Brand href="#" className="header-title animated">
-            mb
+          <Navbar.Brand href="#hero" className="header-title animated">
+            <img className="my-icon" src={mbLogo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="offcanvasNavbar-expand-md"
@@ -51,12 +52,12 @@ const Header = ({ language, setLanguage }) => {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
-                mb
+                <img className="my-icon" src={mbLogo} alt="logo" />
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-5">
-                <Nav.Link href="#" className="nav-item animated">
+                <Nav.Link href="#hero" className="nav-item animated">
                   {language === "en" ? "Home" : "ホーム"}
                 </Nav.Link>
                 <Nav.Link href="#about" className="nav-item animated">

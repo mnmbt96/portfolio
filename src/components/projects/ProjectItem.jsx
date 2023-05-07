@@ -25,7 +25,7 @@ const ProjectItem = ({ project, language }) => {
             ? project.shortDescriptionEng
             : project.shortDescriptionJa}
         </p>
-        <p>
+        <p className="tech-stack">
           {<FaLaptopCode style={{ marginRight: "0.5rem" }} />}
           {project.language}
         </p>

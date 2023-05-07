@@ -70,6 +70,10 @@
     justify-content: center;
   }
 
+  .tech-stack {
+    text-align: center;
+  }
+
   .description-container {
     margin: 2rem 0 0 0;
   }

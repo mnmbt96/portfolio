@@ -66,3 +66,13 @@
   display: flex;
   justify-content: end !important;
 }
+
+@media screen and (max-width: 575px) {
+  .modal-description {
+    margin: 0 1rem;
+  }
+
+  .modal-icons {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+}

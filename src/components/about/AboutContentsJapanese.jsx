@@ -15,6 +15,7 @@ const AboutContentsJapanese = () => {
         <a
           className="udemy-link"
           href="https://www.udemy.com/course/the-complete-javascript-course/"
+          target="_blank"
         >
           JavaScriptのマスターコース
         </a>

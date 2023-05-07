@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Section from "./Section";
-import { Form } from "react-bootstrap";
+import { useForm, ValidationError } from "@formspree/react";
 import "../../src/style/contact.css";
 import "../../src/style/style.css";
 
 const Contact = ({ language }) => {
+  const [state, handleSubmit] = useForm("mpzebrzj");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (state.succeeded) {
+      setIsSubmitted(true);
+      document.getElementById("contact-form").reset();
+    }
+  }, [state.succeeded]);
+
   const content = {
-    en: "Contact me through this form or via email, Instagram, LinkedIn, or Facebook. \nI will get back to you!",
-    ja: "ご質問等ございましたら、こちらのフォームまたはEメール、instagram、linkedin、facebookからご連絡いただけます。",
+    en: "Feel free to contact me through this form or via email, Instagram, LinkedIn, or Facebook. \nI will get back to you!",
+    ja: "ご質問等ございましたら、こちらのフォームまたはEメール、instagram、linkedin、facebookからお気軽にご連絡ください。",
   };
 
   return (
@@ -18,33 +28,65 @@ const Contact = ({ language }) => {
         </h2>
         <div className="contact-container">
           <p>{language === "en" ? content.en : content.ja}</p>
-          <Form className="input-forms">
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>{language === "en" ? "Name" : "氏名"}</Form.Label>
-              <Form.Control type="textarea" required />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>
-                {language === "en" ? "Email" : "メールアドレス"}
-              </Form.Label>
-              <Form.Control type="email" required />
-            </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>
+          <form
+            id="contact-form"
+            className="input-forms"
+            onSubmit={handleSubmit}
+          >
+            <div className="input-area">
+              <label htmlFor="name">
+                {language === "en" ? "Name*" : "氏名*"}
+              </label>
+              <input id="name" type="text" name="name" required />
+              <ValidationError
+                prefix="Name"
+                field="name"
+                errors={state.errors}
+              />
+            </div>
+
+            <div className="input-area">
+              <label htmlFor="email">
+                {language === "en" ? "Email*" : "メールアドレス*"}
+              </label>
+              <input id="email" type="email" name="email" required />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+            </div>
+
+            {/* message */}
+            <div className="input-area">
+              <label htmlFor="message">
                 {language === "en" ? "Message" : "メッセージ"}
-              </Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-          </Form>
-          <button className="btn-submit">
-            {language === "en" ? "Submit" : "送信"}
-          </button>
+              </label>
+              <textarea id="message" name="message" />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
+            </div>
+
+            {isSubmitted && (
+              <p className="submit-message">
+                {language === "en"
+                  ? "Thank you for your message!"
+                  : "ご連絡ありがとうございます！"}
+              </p>
+            )}
+
+            <button
+              className="btn-submit"
+              type="submit"
+              disabled={state.submitting}
+              // onClick={resetForm}
+            >
+              {language === "en" ? "Submit" : "送信"}
+            </button>
+          </form>
         </div>
       </section>
     </Section>

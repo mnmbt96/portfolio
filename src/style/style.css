@@ -3,11 +3,11 @@
   padding: 0;
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   * {
     font-size: 0.9rem;
   }
-}
+} */
 
 body {
   background-color: #fff5f5 !important;
@@ -50,14 +50,14 @@ body {
   #about,
   #projects,
   #contact {
-    max-width: 90vw !important;
+    max-width: 85vw !important;
   }
 }
 
 @media screen and (max-width: 550px) {
   #projects,
   #contact {
-    margin-top: 7rem !important;
+    margin-top: 0 !important;
   }
 
   .section-title {
