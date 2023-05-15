@@ -11,7 +11,8 @@ const ProjectItem = ({ project, language }) => {
     <div className="projectItem-container">
       <div>
         <h5 className="project-title">
-          {language === "en" ? project.titleEng : project.titleJa}
+          {language === "en" ? project.titleEng : project.titleJa} (
+          {project.year})
         </h5>
         <img
           className="project-img"
