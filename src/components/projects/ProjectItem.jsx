@@ -10,10 +10,20 @@ const ProjectItem = ({ project, language }) => {
   return (
     <div className="projectItem-container">
       <div>
-        <h5 className="project-title">
-          {language === "en" ? project.titleEng : project.titleJa} (
-          {project.year})
-        </h5>
+        <div className="project-title-section">
+          <h5 className="project-title">
+            {language === "en" ? project.titleEng : project.titleJa} (
+            {project.year})
+          </h5>
+          <div>
+            <a href={project.url} target="_blank">
+              <BiLinkExternal className="project-icon" />
+            </a>
+            <a href={project.github} target="_blank">
+              <AiFillGithub className="project-icon" />
+            </a>
+          </div>
+        </div>
         <img
           className="project-img"
           src={project.image}
@@ -31,13 +41,7 @@ const ProjectItem = ({ project, language }) => {
           {project.language}
         </p>
 
-        <div className="project-detail-links">
-          <a href={project.url} target="_blank">
-            <BiLinkExternal className="project-icon" />
-          </a>
-          <a href={project.github} target="_blank">
-            <AiFillGithub className="project-icon" />
-          </a>
+        <div className="project-detail">
           <button className="btn-open-modal" onClick={() => setShow(true)}>
             {language === "en" ? "See More" : "詳細はこちら"}
           </button>
