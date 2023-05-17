@@ -32,7 +32,7 @@
     "titleEng": "FX Trade App",
     "titleJa": "FXトレードアプリ",
     "year": "2023",
-    "image": "https://drive.google.com/uc?export=view&id=1oxRBd1iRnXjEl30iTU3OSYrqMtJ-HHB_",
+    "image": "https://drive.google.com/uc?export=view&id=1TM5coXapDvJeQO2Q8r7-Is0SnhRk_bGm",
     "shortDescriptionEng": "FX Trade App is a JavaScript and jQuery application that uses Freecurrency API. It consists of several pages, including a landing page, login page, sign-in page, home page, and trade page.  ",
     "shortDescriptionJa": "FXトレードアプリは、Freecurrency APIを利用して、JavaScripとjQueryで制作したウェブアプリで、ランディングページ、ログインページ、サインインページ、ホームページ、トレードページから構成されています。",
     "englishDescription": "FX Trade App is a JavaScript and jQuery application that uses Freecurrency API. It consists of several pages, including a landing page, login page, sign-in page, home page, and trade page. The app was created by a team of four, and my specific contributions involved implementing the exchange rate fluctuation graph and the deposit functionality on the home page. For the graph, I utilized chart.js to retrieve data from the API and organized it into arrays based on different time periods, allowing users to switch between periods. Additionally, clicking on a currency in the list on the left side of the page triggers a corresponding graph switch. Regarding the deposit functionality, user balances and profits are stored in localStorage, ensuring persistence. During sign-in, the entered information is saved in localStorage, and sessionStorage is used to temporarily store the logged-in user, enabling management of the currently logged-in user. Since no backend or database is used, feel free to sign in with fake information and try it out.",
