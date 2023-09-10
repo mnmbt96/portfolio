@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
+import Hero from "../components/Home";
 import About from "../components/about/About";
 import Projects from "../components/projects/Projects";
 import Contact from "../components/Contact";
@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/style.css";
 
 const IndexPage = () => {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("english");
 
   return (
     <>

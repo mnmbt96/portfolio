@@ -24,10 +24,10 @@ const Contact = ({ language }) => {
     <Section>
       <section id="contact" className="container">
         <h2 className="section-title">
-          {language === "en" ? "Contact" : "お問い合せ"}
+          {language === "english" ? "Contact" : "お問い合せ"}
         </h2>
         <div className="contact-container">
-          <p>{language === "en" ? content.en : content.ja}</p>
+          <p>{language === "english" ? content.en : content.ja}</p>
           <form
             id="contact-form"
             className="input-forms"
@@ -35,7 +35,7 @@ const Contact = ({ language }) => {
           >
             <div className="input-area">
               <label htmlFor="name">
-                {language === "en" ? "Name*" : "氏名*"}
+                {language === "english" ? "Name*" : "氏名*"}
               </label>
               <input id="name" type="text" name="name" required />
               <ValidationError
@@ -47,7 +47,7 @@ const Contact = ({ language }) => {
 
             <div className="input-area">
               <label htmlFor="email">
-                {language === "en" ? "Email*" : "メールアドレス*"}
+                {language === "english" ? "Email*" : "メールアドレス*"}
               </label>
               <input id="email" type="email" name="email" required />
               <ValidationError
@@ -60,7 +60,7 @@ const Contact = ({ language }) => {
             {/* message */}
             <div className="input-area">
               <label htmlFor="message">
-                {language === "en" ? "Message" : "メッセージ"}
+                {language === "english" ? "Message" : "メッセージ"}
               </label>
               <textarea id="message" name="message" />
               <ValidationError
@@ -72,7 +72,7 @@ const Contact = ({ language }) => {
 
             {isSubmitted && (
               <p className="submit-message">
-                {language === "en"
+                {language === "english"
                   ? "Thank you for your message!"
                   : "ご連絡ありがとうございます！"}
               </p>
@@ -84,7 +84,7 @@ const Contact = ({ language }) => {
               disabled={state.submitting}
               // onClick={resetForm}
             >
-              {language === "en" ? "Submit" : "送信"}
+              {language === "english" ? "Submit" : "送信"}
             </button>
           </form>
         </div>

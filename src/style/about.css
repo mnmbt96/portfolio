@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 70vw;
   padding-top: 6rem;
 }
 
@@ -12,6 +11,8 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
 }
 
 .about-contents-container {
@@ -44,22 +45,28 @@
 .image-container:hover .square {
   transform: translate(20px, 20px);
 }
-.skills-container {
-  margin-top: 2rem;
-}
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.list-point {
-  color: #fd5d5d;
-}
-
-.skill-name {
-  margin-right: 2rem;
+.contact-icons {
   display: flex;
+  justify-content: start;
   align-items: center;
+}
+
+.btn-resume {
+  margin-right: 10px;
+}
+
+.icon {
+  color: #1b2f5389;
+  font-size: 2rem;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.icon:hover {
+  color: #1b2f53;
+  transform: translateY(-5px);
 }
 
 /* aboutContents.jsx */
@@ -71,19 +78,13 @@
   font-size: 1.2rem;
 }
 
-.udemy-link {
-  text-decoration: none;
-  color: #fd5d5d;
-  font-weight: bold;
-  position: relative;
+@media screen and (max-width: 1000px) {
+  .about-container {
+    margin: 0 !important;
+  }
 }
 
-.udemy-link:hover {
-  border-bottom: 1px solid #fd5d5d;
-  color: #fd5d5d;
-}
-
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 800px) {
   .about-container {
     display: flex;
     flex-direction: column;
@@ -95,7 +96,7 @@
   }
 
   .fortfolio-image {
-    width: 80%;
+    width: 50%;
     height: auto;
   }
 

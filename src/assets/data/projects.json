@@ -1,6 +1,20 @@
 [
   {
-    "id": "0",
+    "id": "3",
+    "titleEng": "TraveLog",
+    "titleJa": "TraveLog",
+    "year": "2023",
+    "image": "https://user-images.githubusercontent.com/111376852/238208737-ecfefb3e-11a4-4c53-8e29-04f336216c43.png",
+    "shortDescriptionEng": "The Todo App is a React and Redux application, and has various features such as adding, deleting, editing, displaying todos based on their progress, and storing data in localStorage.",
+    "shortDescriptionJa": "TodoアプリはReact、Reduxを使ったウェブアプリで、Todoの追加、削除、編集、進捗度合いに応じた表示等のさまざまな機能が実装されています。",
+    "englishDescription": "This Todo application is a web app built using React and Redux, and it has various features such as adding, deleting, editing, and displaying Todos based on their progress. The UI is designed to be user-friendly, with easily readable design elements such as changing the background color of completed Todos and the border color of expired Todos. Moreover, the app counts the number of days remaining until the deadline and sorts them in order of their proximity to the deadline, making it easy to manage deadlines. All state management for changes is done using Redux, and the UI is rendered using React. To switch between the display of Todos based on their progress, the app uses Redux to manage the selected status on the screen and separates the array of Todos into all Todos and those used for display. The app also implements pagination to ensure that even if a large number of Todos are added, the site remains easily navigable. Finally, localStorage is used to save data. You can access the Todo App through the link below, so please check it out.",
+    "japaneseDescription": "TodoアプリはReact、Reduxを使ったウェブアプリで、Todoの追加、削除、編集、進捗度合いに応じた表示等のさまざまな機能が実装されています。また、ユーザーが使いやすいUIを心がけ、Todoが完了した時の背景色や期限を過ぎたTodoのボーダー色を変えるなど、見やすいデザインとなっています。さらに、期限に関しては今日から何日以内に期限日が到来するかをカウントし、期限が近いものから順に並び替えて表示するように表示しています。変更時のステートの管理はすべてReduxで行い、Reactを使ってUIに表示しています。進捗度合いに応じてTodoの表示を切り替えるために、画面で選択されているstatusについてもReduxで管理し、Todoの配列を全てのTodo用と、表示に使うものと分けて保存することで、スムーズに切り替えができるようになりました。ページネーションを実装し、Todoが大量に追加されても見やすいサイトになるように工夫しました。変更があるたびにlocalStorageに保存されます。下のリンクからTodoアプリに移動できるので、ぜひご覧ください。",
+    "language": "React Redux Node.js Express MongoDB MUi",
+    "url": "https://mnmbt96-redux-todo-app.netlify.app",
+    "github": "https://github.com/mnmbt96/redux-todo-app"
+  },
+  {
+    "id": "2",
     "titleEng": "Todo App",
     "titleJa": "Todoアプリ",
     "year": "2023",
@@ -28,35 +42,7 @@
     "github": "https://github.com/mnmbt96/react-weather-app"
   },
   {
-    "id": "2",
-    "titleEng": "FX Trade App",
-    "titleJa": "FXトレードアプリ",
-    "year": "2023",
-    "image": "https://drive.google.com/uc?export=view&id=1TM5coXapDvJeQO2Q8r7-Is0SnhRk_bGm",
-    "shortDescriptionEng": "FX Trade App is a JavaScript and jQuery application that uses Freecurrency API. It consists of several pages, including a landing page, login page, sign-in page, home page, and trade page.  ",
-    "shortDescriptionJa": "FXトレードアプリは、Freecurrency APIを利用して、JavaScripとjQueryで制作したウェブアプリで、ランディングページ、ログインページ、サインインページ、ホームページ、トレードページから構成されています。",
-    "englishDescription": "FX Trade App is a JavaScript and jQuery application that uses Freecurrency API. It consists of several pages, including a landing page, login page, sign-in page, home page, and trade page. The app was created by a team of four, and my specific contributions involved implementing the exchange rate fluctuation graph and the deposit functionality on the home page. For the graph, I utilized chart.js to retrieve data from the API and organized it into arrays based on different time periods, allowing users to switch between periods. Additionally, clicking on a currency in the list on the left side of the page triggers a corresponding graph switch. Regarding the deposit functionality, user balances and profits are stored in localStorage, ensuring persistence. During sign-in, the entered information is saved in localStorage, and sessionStorage is used to temporarily store the logged-in user, enabling management of the currently logged-in user. Since no backend or database is used, feel free to sign in with fake information and try it out.",
-    "japaneseDescription": "FXトレードアプリは、Freecurrency APIを利用して、javascripとjQueryで制作したウェブアプリで、ランディングページ、ログインページ、サインインページ、ホームページ、トレードページから構成されています。4人のチームで制作し、私はホームページの為替レートの変動グラフと、入金機能を担当しました。chart.jsを使いAPIから取得した情報を、期間毎に配列にすることで期間の切り替えができました。また、左横の通貨リストをクリックすると通貨に応じてグラフも切り替わります。入金機能はユーザーに応じてlocalStorageに残高と利益が保存されます。サインインの際に入力された情報はlocalStorageに保存され、sessionStorageにログインユーザーを一時的に保存することで、どのユーザーがログインしているかを管理しています。バックエンドやデータベースは使用していないので、気軽にフェイク情報でサインインして試してみてください。",
-    "language": "JavaScript jQuery HTML SCSS",
-    "url": "https://fxtrade-app.netlify.app/",
-    "github": "https://github.com/shiori793/Web-Development-2-Final-Project"
-  },
-  {
-    "id": "3",
-    "titleEng": "E-Commerce App",
-    "titleJa": "イーコマースサイト",
-    "year": "2022",
-    "image": "https://user-images.githubusercontent.com/111376852/218842832-394f8cab-148c-4db2-b694-54f0e28dd5bb.png",
-    "shortDescriptionEng": "The E-Commerce App is a JavaScript application that utilizes the Fake Store API to simulate online shopping. ",
-    "shortDescriptionJa": "イーコマースサイトは、Fake Store API を利用したJavascriptアプリケーションで、ネットショッピングのシミュレーションができます。",
-    "englishDescription": "The E-Commerce App is a JavaScript application that utilizes the Fake Store API to simulate online shopping. When a user adds a product to their shopping cart, the cart icon's count increases, and clicking on the cart icon displays the number and price of each item in the cart, as well as the total amount. Clicking the checkout button displays an alert with the purchase amount and empties the shopping cart. Users can also adjust the quantity of each item or remove them from the cart individually, or clear the entire cart. This web application was created to understand the Document Object Model (DOM). Please note that it does not have responsive design capabilities. You can check out the E-Commerce App through the link below.",
-    "japaneseDescription": "イーコマースサイトは、Fake Store API を利用したJavascriptアプリケーションで、ネットショッピングのシミュレーションができます。商品を買い物カゴに入れると、カートのアイコンのカウントが増え、カートをクリックするとカートに入れた商品の個数や金額と全体の合計金額を見ることができます。購入ボタンを押すと、金額のお知らせがAlartで表示され、カートの中は空になります。カートの中は、商品ごとに個数を変更したり、削除できるようになっています。また、全てカートを空にすることもできます。DOMを理解するために作成したウェブアプリです。レスポンシブ対応していませんが、ぜひパソコンで下のリンクからご覧ください。",
-    "language": "HTML Bootstrap CSS JavaScript",
-    "url": "https://e-commerce-website-taupe.vercel.app",
-    "github": "https://github.com/mnmbt96/E-Commerce-Website"
-  },
-  {
-    "id": "4",
+    "id": "0",
     "titleEng": "Udemy Projects",
     "titleJa": "Udemyプロジェクト",
     "year": "2022-2023",

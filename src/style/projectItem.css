@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: center;
   color: #1b2f53;
-  margin-bottom: 4rem;
+  margin: 0 10rem 4rem 10rem;
 }
 
 .project-title-section {
@@ -62,11 +62,17 @@
   background-color: #f6808495;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1200px) {
   .projectItem-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0;
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .project-img {
+    width: 270px;
+    height: 170px;
   }
 
   .tech-stack {
@@ -74,13 +80,14 @@
   }
 
   .description-container {
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 0 1rem;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .project-img {
-    width: 270px;
-    height: 170px;
+@media screen and (max-width: 600px) {
+  .projectItem-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

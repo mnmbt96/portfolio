@@ -7,12 +7,13 @@ import "../../style/projectItem.css";
 
 const ProjectItem = ({ project, language }) => {
   const [show, setShow] = useState(false);
+
   return (
     <div className="projectItem-container">
       <div>
         <div className="project-title-section">
           <h5 className="project-title">
-            {language === "en" ? project.titleEng : project.titleJa} (
+            {language === "english" ? project.titleEng : project.titleJa} (
             {project.year})
           </h5>
           <div>
@@ -32,7 +33,7 @@ const ProjectItem = ({ project, language }) => {
       </div>
       <div className="description-container">
         <p className="project-description">
-          {language === "en"
+          {language === "english"
             ? project.shortDescriptionEng
             : project.shortDescriptionJa}
         </p>
@@ -43,7 +44,7 @@ const ProjectItem = ({ project, language }) => {
 
         <div className="project-detail">
           <button className="btn-open-modal" onClick={() => setShow(true)}>
-            {language === "en" ? "See More" : "詳細はこちら"}
+            {language === "english" ? "See More" : "詳細はこちら"}
           </button>
         </div>
         {show && (

@@ -3,19 +3,13 @@
   padding: 0;
 }
 
-/* @media screen and (max-width: 767px) {
-  * {
-    font-size: 0.9rem;
-  }
-} */
-
 body {
-  background-color: #fff5f5 !important;
+  background-color: #f0ebe9 !important;
   color: #1b2f53;
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 3rem;
@@ -40,17 +34,21 @@ body {
   margin-bottom: 2rem;
 }
 
+button {
+  background-color: #f68084;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 6px !important;
+  border: none;
+}
+
+button:hover {
+  background-color: #f6808495;
+}
+
 @media screen and (max-width: 805px) {
   .section-title {
     font-size: 1.7rem;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #about,
-  #projects,
-  #contact {
-    max-width: 85vw !important;
   }
 }
 

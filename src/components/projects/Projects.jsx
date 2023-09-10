@@ -10,7 +10,7 @@ const Projects = ({ language }) => {
     <Section>
       <section id="projects" className="container">
         <h2 className="section-title">
-          {language === "en" ? "Projects" : "プロジェクト"}
+          {language === "english" ? "Projects" : "プロジェクト"}
         </h2>
         {projects.map((project) => (
           <ProjectItem project={project} language={language} key={project.id} />

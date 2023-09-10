@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
-import {
-  AiOutlineGithub,
-  AiFillLinkedin,
-  AiOutlineInstagram,
-  AiFillFacebook,
-} from "react-icons/ai";
-import "../../src/style/hero.css";
+// import {
+//   AiOutlineGithub,
+//   AiFillLinkedin,
+//   AiOutlineInstagram,
+//   AiFillFacebook,
+// } from "react-icons/ai";
+import MainImg from "../assets/images/main_img.png";
+import "../../src/style/home.css";
 import "../../src/style/style.css";
 
 const Hero = () => {
@@ -17,8 +18,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="hero-container">
-      <div className="contact-icons">
+    <section id="home" className="hero-container">
+      {/* <div className="contact-icons">
         <a
           href="https://github.com/mnmbt96"
           target="_blank"
@@ -49,15 +50,13 @@ const Hero = () => {
         >
           <AiFillFacebook className="icon" />
         </a>
-      </div>
+      </div> */}
+      <img className="hero-img" src={MainImg} alt="Main" />
       <div className="hero-contents">
         <p className="hero-greetings">Hi there, my name is</p>
         <h1 className="hero-name">Manami Batai</h1>
         <p className="hero-job">Front-end Developer</p>
       </div>
-      <a href="mailto:manami.batai@gmail.com" className="mail-animated">
-        <p className="hero-mail">manami.batai@gmail.com</p>
-      </a>
     </section>
   );
 };
