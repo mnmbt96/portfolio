@@ -11,6 +11,7 @@ const Header = ({ language, setLanguage }) => {
   const navItems = [
     { english: "Home", japanese: "ホーム", link: "home" },
     { english: "About Me", japanese: "自己紹介", link: "about" },
+    { english: "Skills", japanese: "スキル", link: "skills" },
     { english: "Projects", japanese: "プロジェクト", link: "projects" },
     { english: "Contact", japanese: "お問い合わせ", link: "contact" },
   ];

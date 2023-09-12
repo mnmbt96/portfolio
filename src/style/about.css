@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 6rem;
+  padding: 3rem 0;
 }
 
 .about-container {
@@ -17,10 +17,14 @@
 
 .about-contents-container {
   margin-right: 2rem;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-container {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,15 +32,15 @@
 
 .fortfolio-image {
   position: relative;
-  min-width: 100px;
-  height: 320px;
+  width: 280px;
+  height: 280px;
   border-radius: 5px;
 }
 
 .square {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 280px;
+  height: 280px;
   background-color: #1b2f53;
   transition: transform 0.5s ease;
   border-radius: 5px;
@@ -48,7 +52,7 @@
 
 .contact-icons {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -84,30 +88,33 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center !important;
+    justify-content: space-evenly !important;
   }
   .about-contents {
     margin: 2rem 0;
   }
 
+  .image-container {
+    height: 180px !important;
+  }
+
   .fortfolio-image {
-    width: 50%;
-    height: auto;
+    width: 180px;
+    height: 180px;
   }
 
   .square {
     display: none;
   }
-}
 
-@media screen and (max-width: 767px) {
   .about-contents-container {
     margin: 0;
+    height: auto;
   }
   .skill-name {
     margin-right: 1rem;

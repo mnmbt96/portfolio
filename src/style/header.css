@@ -1,6 +1,7 @@
 .navbar {
   position: absolute !important;
   width: 100vw;
+  height: 5rem !important;
 }
 
 .sticky {
@@ -37,7 +38,7 @@
 }
 
 .nav-item {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   color: #1b2f5389 !important;
   position: relative;
   text-decoration: none;
@@ -107,7 +108,7 @@
 }
 
 .btn-language {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   border: none;
   background: transparent;
   justify-content: start;

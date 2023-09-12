@@ -1,0 +1,31 @@
+.skill-container {
+  width: 45%;
+}
+
+.skill-image-container {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-img {
+  width: 30px;
+}
+.skill-language {
+  text-align: center;
+}
+
+.skill-description {
+  font-size: small;
+}
+
+@media screen and (max-width: 767px) {
+  .skill-container {
+    width: 100%;
+  }
+
+  .skill-description {
+    margin: 0 10px;
+  }
+}

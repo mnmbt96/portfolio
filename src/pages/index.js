@@ -6,6 +6,7 @@ import Projects from "../components/projects/Projects";
 import Contact from "../components/Contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/style.css";
+import Skills from "../components/skills/Skills";
 
 const IndexPage = () => {
   const [language, setLanguage] = useState("english");
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <Header language={language} setLanguage={setLanguage} />
       <Hero />
       <About language={language} />
+      <Skills language={language} />
       <Projects language={language} />
       <Contact language={language} />
       <p className="copyright">&copy; 2023 Manami Batai</p>

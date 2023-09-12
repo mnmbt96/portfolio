@@ -5,7 +5,7 @@
 
 body {
   background-color: #f0ebe9 !important;
-  color: #1b2f53;
+  color: #1b2f53 !important;
 }
 
 .section-title {
@@ -46,9 +46,10 @@ button:hover {
   background-color: #f6808495;
 }
 
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 767) {
   .section-title {
-    font-size: 1.7rem;
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
   }
 }
 
@@ -56,9 +57,5 @@ button:hover {
   #projects,
   #contact {
     margin-top: 0 !important;
-  }
-
-  .section-title {
-    margin-bottom: 1.5rem;
   }
 }
