@@ -1,14 +1,12 @@
 #skills {
-  background-color: white;
   padding: 3rem 0;
-  width: 70%;
-  border-radius: 10px;
+  width: 75%;
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: start;
+  align-items: center;
   justify-content: space-evenly;
   gap: 1rem;
 }
