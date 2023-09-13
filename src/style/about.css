@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 1000px) {
   .about-container {
-    margin: 0 !important;
+    margin: 0 12px !important;
   }
 }
 
