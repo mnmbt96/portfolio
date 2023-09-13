@@ -45,17 +45,3 @@ button {
 button:hover {
   background-color: #f6808495;
 }
-
-@media screen and (max-width: 767) {
-  .section-title {
-    font-size: 1rem !important;
-    margin-bottom: 1.5rem !important;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  #projects,
-  #contact {
-    margin-top: 0 !important;
-  }
-}

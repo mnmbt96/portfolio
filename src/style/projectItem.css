@@ -19,7 +19,7 @@
 }
 
 .project-img {
-  width: 440px;
+  width: 480px;
   height: 280px;
 }
 
@@ -74,20 +74,21 @@
     width: 270px;
     height: 170px;
   }
-
-  .tech-stack {
-    text-align: center;
-  }
-
-  .description-container {
-    margin: 1rem 0 0 0;
-  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .projectItem-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .project-img {
+    width: 300px;
+    height: 180px;
+  }
+
+  .description-container {
+    margin: 1rem 0 0 0rem;
   }
 }
