@@ -50,6 +50,10 @@
   text-align: center;
 }
 
+.tech-stack {
+  text-align: start !important;
+}
+
 .btn-open-modal {
   background-color: #f68084;
   color: #fff;
