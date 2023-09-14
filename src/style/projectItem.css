@@ -50,20 +50,32 @@
   text-align: center;
 }
 
+.project-lists {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.list-point {
+  color: #fd5d5d;
+}
+
+.project-item {
+  margin-right: 1rem;
+}
+
+.udemy-project-link {
+  text-decoration: none;
+  color: #1b2f53;
+}
+
+.udemy-project-link:hover {
+  border-bottom: 1px solid #fd5d5d;
+  color: #fd5d5d;
+}
+
 .tech-stack {
   text-align: start !important;
-}
-
-.btn-open-modal {
-  background-color: #f68084;
-  color: #fff;
-  padding: 0.5rem 2rem;
-  border-radius: 6px;
-  border: none;
-}
-
-.btn-open-modal:hover {
-  background-color: #f6808495;
 }
 
 @media screen and (max-width: 1200px) {
@@ -71,13 +83,13 @@
     margin: 0;
     margin-bottom: 4rem;
   }
-}
-
-@media screen and (max-width: 900px) {
   .project-img {
     width: 270px;
     height: 170px;
   }
+}
+
+@media screen and (max-width: 900px) {
 }
 
 @media screen and (max-width: 767px) {

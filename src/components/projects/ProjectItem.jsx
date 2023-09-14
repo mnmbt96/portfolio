@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import ProjectModal from "./ProjectModal";
 import { BiLinkExternal } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLaptopCode } from "react-icons/fa";
+import { VscDebugBreakpointDataUnverified } from "react-icons/vsc";
 import "../../style/projectItem.css";
 
 const ProjectItem = ({ project, language }) => {
-  const [show, setShow] = useState(false);
-
+  console.log(project);
   return (
     <div className="projectItem-container">
       <div>
@@ -34,27 +33,45 @@ const ProjectItem = ({ project, language }) => {
       <div className="description-container">
         <p className="project-description">
           {language === "english"
-            ? project.shortDescriptionEng
-            : project.shortDescriptionJa}
+            ? project.englishDescription
+            : project.japaneseDescription}
         </p>
+
+        {project.login && (
+          <div>
+            <p style={{ margin: "0", fontWeight: "bold" }}>
+              {language === "english" ? "Test Login" : "テストログイン"}
+            </p>
+
+            <div style={{ display: "flex", gap: "15px" }}>
+              {project.loginUser.map((user) => (
+                <p>
+                  {user.user} / {user.password}
+                </p>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="project-lists">
+          {project.projectUrls &&
+            project.projectUrls.map((proj) => (
+              <div className="project-item">
+                <VscDebugBreakpointDataUnverified className="list-point" />
+                <a
+                  className="udemy-project-link"
+                  href={proj.url}
+                  target="_blank"
+                >
+                  {proj.name}
+                </a>
+              </div>
+            ))}
+        </div>
         <p className="tech-stack">
           {<FaLaptopCode style={{ marginRight: "0.5rem" }} />}
           {project.language}
         </p>
-
-        <div className="project-detail">
-          <button className="btn-open-modal" onClick={() => setShow(true)}>
-            {language === "english" ? "See More" : "詳細はこちら"}
-          </button>
-        </div>
-        {show && (
-          <ProjectModal
-            project={project}
-            language={language}
-            show={show}
-            setShow={setShow}
-          />
-        )}
       </div>
     </div>
   );
