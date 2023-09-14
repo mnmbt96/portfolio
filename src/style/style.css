@@ -18,6 +18,7 @@ body {
 
 /* animation */
 .container {
+  padding-top: 3rem;
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 2s ease, transform 1s ease;
@@ -44,4 +45,13 @@ button {
 
 button:hover {
   background-color: #f6808495;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-top: 1.5rem;
+  }
+  .section-title {
+    margin-bottom: 1rem;
+  }
 }

@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Section from "./Section";
 import { useForm, ValidationError } from "@formspree/react";
+import {
+  AiOutlineGithub,
+  AiFillLinkedin,
+  AiOutlineInstagram,
+  AiFillFacebook,
+} from "react-icons/ai";
 import "../../src/style/contact.css";
 import "../../src/style/style.css";
 
@@ -16,8 +22,8 @@ const Contact = ({ language }) => {
   }, [state.succeeded]);
 
   const content = {
-    en: "Feel free to contact me through this form or via email, Instagram, LinkedIn, or Facebook. \nI will get back to you!",
-    ja: "ご質問等ございましたら、こちらのフォームまたはEメール、instagram、linkedin、facebookからお気軽にご連絡ください。",
+    en: "Feel free to contact me.\nI will get back to you!",
+    ja: "ご質問等ございましたら、お気軽にご連絡ください。",
   };
 
   return (
@@ -82,11 +88,42 @@ const Contact = ({ language }) => {
               className="btn-submit"
               type="submit"
               disabled={state.submitting}
-              // onClick={resetForm}
             >
               {language === "english" ? "Submit" : "送信"}
             </button>
           </form>
+          <div className="contact-icons">
+            <a
+              href="https://github.com/mnmbt96"
+              target="_blank"
+              className="icon-animated"
+            >
+              <AiOutlineGithub className="icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/manami-batai-168593247/"
+              target="_blank"
+              className="icon-animated"
+            >
+              <AiFillLinkedin className="icon" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/mnmbt96/"
+              target="_blank"
+              className="icon-animated"
+            >
+              <AiOutlineInstagram className="icon" />
+            </a>
+
+            <a
+              href="https://www.facebook.com/manami.batai"
+              target="_blank"
+              className="icon-animated"
+            >
+              <AiFillFacebook className="icon" />
+            </a>
+          </div>
         </div>
       </section>
     </Section>
