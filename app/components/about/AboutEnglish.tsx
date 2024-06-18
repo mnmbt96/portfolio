@@ -10,7 +10,7 @@ const AboutEnglish = () => {
       <p>
         Enthusiastic and self-motivated front-end developer with an academic
         background in web development. Proficient in front-end development with
-        React and Redux, I've created various web applications. I also have
+        React and Redux, I have created various web applications. I also have
         experience with MERN stack development.
       </p>
     </div>

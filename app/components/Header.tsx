@@ -80,7 +80,7 @@ const Header: React.FC<HeaderProps> = ({ language, setLanguage }) => {
               onClick={toggleLanguage}
             >
               <span> {language === "english" ? "日本語" : "English"}</span>
-              <img
+              <Image
                 src={`https://flagcdn.com/${
                   language === "english" ? "jp" : "ca"
                 }.svg`}
@@ -128,7 +128,7 @@ const Header: React.FC<HeaderProps> = ({ language, setLanguage }) => {
                 }
               >
                 <span> {language === "english" ? "日本語" : "English"}</span>
-                <img
+                <Image
                   src={`https://flagcdn.com/${
                     language === "english" ? "jp" : "ca"
                   }.svg`}
