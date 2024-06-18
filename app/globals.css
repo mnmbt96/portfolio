@@ -16,18 +16,120 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* ーーーーーーーー　ヘッダーがMainを超えたらスライドインするアニメーション　ーーーーーーーー */
+.sticky {
+  position: fixed !important;
+  background: #f3f4f6;
+  top: 0;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  animation: slideDown 0.8s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
   }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* ーーーーーーーー　読み込んだ時にnavが順番に出てくるアニメーション　ーーーーーーーー */
+.animated {
+  position: relative;
+  opacity: 0;
+}
+
+.animated:nth-of-type(1) {
+  animation: slideInDown 1s 0.2s forwards;
+}
+
+.animated:nth-of-type(2) {
+  animation: slideInDown 1s 0.5s forwards;
+}
+
+.animated:nth-of-type(3) {
+  animation: slideInDown 1s 0.6s forwards;
+}
+
+.animated:nth-of-type(4) {
+  animation: slideInDown 1s 0.7s forwards;
+}
+.animated:nth-of-type(5) {
+  animation: slideInDown 1s 0.8s forwards;
+}
+.animated:nth-of-type(6) {
+  animation: slideInDown 1s 0.9s forwards;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-70px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*　ーーーーーーーー ホバー時に下線が中央から動くアニメーション　ーーーーーーーー */
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px; /* 下線の位置 */
+  width: 0;
+  height: 1px; /* 下線の太さ */
+  background-color: currentColor; /* テキストと同じ色 */
+  transition: width 0.5s ease, left 0.5s ease;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.hero-contents {
+  position: absolute;
+  animation: fall 3s ease-in-out;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ーーーーーーーー　スクロールした時に各コンポーネントがスライドで表示される　ーーーーーーーー */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 1s ease;
+}
+
+.show .section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ーーーーーーーー　モーダルが開いた時に背景がスクロールされないようにする　ーーーーーーーー */
+.modal-open {
+  overflow: hidden !important;
 }
